@@ -11,7 +11,7 @@
     // add meta-tag to <head> immediately for crawlers/browsers for proper http redirect
     var meta = document.createElement('meta');
     meta.httpEquiv='refresh';
-    meta.content="1; url='"+url.href+"'";
+    meta.content="0; url='"+url.href+"'";
     document.head.appendChild(meta);
     // add script for fallback in case meta doesn't work
     window.addEventListener('load', function () {
