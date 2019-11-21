@@ -17,7 +17,6 @@
 
   <script type="text/javascript">
   (function(){
-    console.log(location);
     url = new URL(location.href);
     url.hostname = 'scikit-hep.org';
     document.querySelector('section.redirecting > p').innerHTML = 'Redirecting to <a href="' + url.href + '">' + url.href + '</a> in 3 seconds…';
