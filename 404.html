@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting you...</title>
+</head>
+<body>
+  <header>
+    <h1>pyhf is part of the SciKit-HEP family!</h1>
+    <p>Thanks for using us.</p>
+  </header>
+
+  <section class="redirecting">
+    <h1>Redirecting...</h1>
+    <p>Please wait. This won’t take long, promise.</p>
+  </section>
+
+  <script type="text/javascript">
+  (function(){
+    console.log(location);
+    url = location.href;
+    document.querySelector('section.redirecting > p').innerHTML = 'Redirecting to <a href="' + url + '">' + url + '</a>…';
+    location.href = url;
+  })();
+  </script>
+
+</body>
+</html>
