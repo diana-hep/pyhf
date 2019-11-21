@@ -5,6 +5,9 @@
   <title>Redirecting you...</title>
   <script type="text/javascript">
   (function(){
+    console.log(document);
+    console.log(document.head);
+    document.write('test');
     url = new URL(location.href);
     url.hostname = 'scikit-hep.org';
     //setTimeout(function(){ location.href = url.href; }, 5000);
